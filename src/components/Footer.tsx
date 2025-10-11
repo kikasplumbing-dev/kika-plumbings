@@ -70,17 +70,17 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 mt-1 flex-shrink-0 text-secondary" />
                 <div>
-                  <p className="text-sm text-primary-foreground/90">+254 XXX XXX XXX</p>
+                  <p className="text-sm text-primary-foreground/90">09033421523</p>
                   <p className="text-xs text-primary-foreground/70">24/7 Emergency</p>
                 </div>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="w-4 h-4 mt-1 flex-shrink-0 text-secondary" />
-                <p className="text-sm text-primary-foreground/90">info@kikaplumbing.com</p>
+                <p className="text-sm text-primary-foreground/90">kikasplumbing@gmail.com</p>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-secondary" />
-                <p className="text-sm text-primary-foreground/90">Nairobi, Kenya</p>
+                <p className="text-sm text-primary-foreground/90">Lagos, Nigeria</p>
               </li>
             </ul>
 

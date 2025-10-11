@@ -28,15 +28,30 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+
+      if (error) throw error;
+
       toast({
         title: "Message Sent!",
         description: "We'll get back to you as soon as possible.",
       });
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -50,19 +65,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+254 XXX XXX XXX", "Available 24/7"],
-      action: "tel:+254XXXXXXXXX"
+      details: ["09033421523", "Available 24/7"],
+      action: "tel:09033421523"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@kikaplumbing.com", "support@kikaplumbing.com"],
-      action: "mailto:info@kikaplumbing.com"
+      details: ["kikasplumbing@gmail.com", "support@kikaplumbing.com"],
+      action: "mailto:kikasplumbing@gmail.com"
     },
     {
       icon: MapPin,
       title: "Location",
-      details: ["Nairobi, Kenya", "Serving all areas"],
+      details: ["Lagos, Nigeria", "Serving all areas"],
       action: null
     },
     {
@@ -241,18 +256,17 @@ const Contact = () => {
                     className="bg-white text-primary hover:bg-white/90 text-lg px-8 h-14"
                     asChild
                   >
-                    <a href="tel:+254XXXXXXXXX">
+                    <a href="tel:09033421523">
                       <Phone className="mr-2 w-5 h-5" />
                       Call Now
                     </a>
                   </Button>
                   <Button 
                     size="lg" 
-                    variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 h-14"
+                    className="bg-primary text-white hover:bg-primary/90 text-lg px-8 h-14"
                     asChild
                   >
-                    <a href="https://wa.me/254XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2349033421523" target="_blank" rel="noopener noreferrer">
                       <MessageSquare className="mr-2 w-5 h-5" />
                       WhatsApp Us
                     </a>
@@ -272,11 +286,11 @@ const Contact = () => {
               Our Service Area
             </h2>
             <p className="text-muted-foreground mb-8">
-              We proudly serve Nairobi and surrounding areas. Contact us to confirm service availability in your location.
+              We proudly serve Lagos and surrounding areas. Contact us to confirm service availability in your location.
             </p>
             <div className="bg-muted/50 rounded-2xl p-12 border-2 border-border">
               <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-              <p className="text-lg font-semibold text-primary mb-2">Nairobi, Kenya</p>
+              <p className="text-lg font-semibold text-primary mb-2">Lagos, Nigeria</p>
               <p className="text-muted-foreground">
                 Serving all residential, commercial, and industrial areas
               </p>
