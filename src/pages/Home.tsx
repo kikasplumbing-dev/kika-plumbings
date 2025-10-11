@@ -272,7 +272,7 @@ const Home = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 h-14"
+              className="border-2 border-white text-white bg-primary  text-lg px-8 h-14"
               asChild
             >
               <a href="tel:+254XXXXXXXXX">Call Us Now</a>
