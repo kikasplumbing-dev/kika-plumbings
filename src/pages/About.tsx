@@ -229,8 +229,7 @@ const About = () => {
             <Link to="/services">
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 h-14"
+                className="bg-primary text-white hover:bg-primary/90 text-lg px-8 h-14"
               >
                 View Our Services
               </Button>
