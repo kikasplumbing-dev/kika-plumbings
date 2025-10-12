@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Droplet, Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Droplet, Phone, Mail, MapPin, Facebook, Send, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -86,13 +86,13 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex space-x-3 mt-4">
-              <a href="#" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61559059035586" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
-                <Instagram className="w-4 h-4" />
+              <a href="http://t.me/Kikaplumbing" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
+                <Send className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/emmanuel-eneji-0a3336103" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
