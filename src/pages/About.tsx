@@ -70,7 +70,7 @@ const About = () => {
                 <div className="space-y-4 text-muted-foreground">
                   <p>
                     Kika Plumbing was established in 2018 with a simple mission: to provide reliable, 
-                    affordable, and high-quality plumbing solutions to homes and businesses across Kenya.
+                    affordable, and high-quality plumbing solutions to homes and businesses across Nigeria.
                   </p>
                   <p>
                     What started as a small team of dedicated plumbers has grown into a trusted service 
@@ -202,7 +202,7 @@ const About = () => {
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">Our Vision</h3>
                 <p className="text-muted-foreground">
                   To be the most trusted and preferred plumbing and water treatment service provider 
-                  in Kenya, known for our commitment to quality, innovation, and customer satisfaction.
+                  in Nigeria, known for our commitment to quality, innovation, and customer satisfaction.
                 </p>
               </CardContent>
             </Card>
