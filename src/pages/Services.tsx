@@ -10,7 +10,12 @@ import {
   Shield,
   Settings,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  Home,
+  Shirt,
+  Bug,
+  Building2,
+  Sparkles
 } from "lucide-react";
 
 const Services = () => {
@@ -85,6 +90,66 @@ const Services = () => {
         "Performance optimization",
         "Troubleshooting support",
         "Scheduled maintenance plans"
+      ]
+    },
+    {
+      icon: Home,
+      title: "Home Cleaning",
+      description: "Professional residential cleaning services that leave your home spotless, fresh, and healthy for your family.",
+      features: [
+        "Deep cleaning of all rooms",
+        "Kitchen and bathroom sanitization",
+        "Dusting and vacuuming",
+        "Floor mopping and polishing",
+        "Eco-friendly cleaning products"
+      ]
+    },
+    {
+      icon: Shirt,
+      title: "Laundry & Dry Cleaning",
+      description: "Quality laundry and dry cleaning services with pickup and delivery options. We treat your garments with the care they deserve.",
+      features: [
+        "Wash, dry, and fold service",
+        "Professional dry cleaning",
+        "Ironing and pressing",
+        "Stain removal treatment",
+        "Pickup and delivery available"
+      ]
+    },
+    {
+      icon: Bug,
+      title: "General Fumigation",
+      description: "Comprehensive fumigation and pest control services to keep your home or business free from pests and insects.",
+      features: [
+        "Residential and commercial fumigation",
+        "Termite and rodent control",
+        "Cockroach and bedbug treatment",
+        "Mosquito control",
+        "Safe, certified chemicals"
+      ]
+    },
+    {
+      icon: Building2,
+      title: "Office Cleaning",
+      description: "Reliable commercial cleaning services that keep your workplace tidy, hygienic, and productive for staff and clients.",
+      features: [
+        "Daily and weekly cleaning plans",
+        "Workstation and floor cleaning",
+        "Restroom sanitization",
+        "Waste disposal and management",
+        "After-hours cleaning available"
+      ]
+    },
+    {
+      icon: Sparkles,
+      title: "New Apartment Cleaning",
+      description: "Move-in and post-construction cleaning to make your new apartment shine and ready for comfortable living from day one.",
+      features: [
+        "Post-construction dust removal",
+        "Deep cleaning of all surfaces",
+        "Window and glass cleaning",
+        "Floor scrubbing and polishing",
+        "Move-in ready finishing"
       ]
     }
   ];
