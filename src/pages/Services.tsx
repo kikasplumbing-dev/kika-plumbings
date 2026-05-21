@@ -301,10 +301,10 @@ const Services = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 h-14"
+              className="border-2 border-white text-primary hover:bg-primary hover:text-white text-lg px-8 h-14"
               asChild
             >
-              <a href="tel:+254XXXXXXXXX">Call Now</a>
+              <a href="tel:+2549033421523">Call Now</a>
             </Button>
           </div>
         </div>
